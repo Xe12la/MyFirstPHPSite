@@ -1,12 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
+<?php
 
-</body>
-</html>
+if($_SERVER["REQUEST_METHOD"] == "POST"){
+
+    //<!-- this is to make sure that the data submitted is not harmful/not a hacking code data-->
+    $firstname = htmlspecialchars($_POST["firstname"]);
+    $lastname = htmlspecialchars($_POST["lastname"]);
+    $favPet = htmlspecialchars($_POST["favPet"]);
+
+    echo "This are the data Submitted";
+    echo $firstname;
+    echo "<br>";
+    echo $lastname;
+    echo "<br>";
+    echo $favPet;
+    echo "<br>";
+}

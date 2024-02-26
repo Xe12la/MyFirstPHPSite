@@ -22,6 +22,8 @@
                     <option value="bird">bird</option>
                 </select>
             </form>
+
+            <button type="submit">submit</button>
         </main>
     </body>
 </html>
